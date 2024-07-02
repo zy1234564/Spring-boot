@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>修改评论</title>
+</head>
+<body>
+<h2>修改评论</h2>
+<form th:action="@{/comments/save}" th:object="${comment}" method="post">
+    <input type="hidden" th:field="*{id}">
+    <input type="text" th:field="*{content}" placeholder="内容">
+    <input type="text" th:field="*{author}" placeholder="作者">
+    <button type="submit">Save</button>
+</form>
+<br>
+<a href="/comments/list">返回列表</a>
+</body>
+</html>

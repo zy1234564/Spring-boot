@@ -1,0 +1,4 @@
+com\example\demo\Mapper\CommentMapper.class
+com\example\demo\DemoApplication.class
+com\example\demo\Comment\Comment.class
+com\example\demo\Controller\IndexController.class
